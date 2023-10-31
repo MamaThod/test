@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mobile.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+    <div id="top" class="header">
+      <div class="header-area">
+        <div class="header-l">
+          <a href="./index.html">
+            <img src="./imgs/logo/logo.png" alt="">
+          </a>
+          
+        </div>
+        <div class="header-r-m">
+          <div onclick="openmenumb()" class="r-items">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          
+        </div>
+
+        <div class="header-r">
+          <div class="r-items">
+          </div>
+          <div class="r-items">
+          </div>
+          <div class="r-items">
+          </div>
+          <div class="r-items">
+          </div>
+          <div class="r-items">
+          </div>
+          <div class="r-items">
+          </div>
+          <div class="r-items">
+          </div>
+          <div class="r-items">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seach">
+
+      <div class="seach-area">
+        <div class="s-l">
+          
+          <input type="text" placeholder="ค้นหาสินค้า">
+        </div>
+        <div class="s-r">
+          <div class="btn-s">
+            <img src="./imgs/icon/search.png" alt="">
+
+          </div>
+          
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+    <div id="productlist" class="sp-area">
+
+    </div>
+
+    <div class="numpage">
+        
+        <div class="area-page">
+
+            <div class="num-items">
+                <a href=""><</a>
+            </div>
+            <div class="num-items">
+                <a href="">1</a>
+            </div>
+            <div class="num-items">
+                <a href="">2</a>
+            </div>
+            <div class="num-items">
+                <a href="">3</a>
+            </div>
+            <div class="num-items">
+                <a href="">4</a>
+            </div>
+            <div class="num-items">
+                <a href="">5</a>
+            </div>
+            <div class="num-items">
+                <a href="">...</a>
+            </div>
+
+            <div class="num-items">
+                <a href="">></a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+    </div>
+
+    <div id="model" style="display: none;" class="model">
+      <div class="model-page">
+        <div onclick="closemodal()" class="btn-x">
+          <img  src="./imgs/icon/x.png" alt="">
+        </div>
+
+        <div class="items-model">
+
+          <div class="model-img">
+            <img id="mdd-img" class="model-img-real" src="./imgs/product/1.png" alt="">
+          </div>
+
+          <div class="text-model">
+            <p id="mdd-name" class="mmd-name">iPhone 15 Pro Max 1 TB</p>
+            <p id="mdd-price" class="mmd-price">5000 ฿</p>
+            <p id="mdd-down" class="mmd-down">เงินดาวน์ 2000</p>
+            <p id="mdd-itm" class="mmd-itm">1000 / เดือน</p>
+          </div>
+
+          <div class="btn-contact">
+            <div class="btn-c">
+              <a href="https://web.facebook.com/profile.php?id=100063533562680">
+              <p>ติดต่อเจ้าหน้าที่</p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div id="modelpower" style="display: none;" class="model">
+      <div class="model-page">
+        <div onclick="closemodal()" class="btn-x">
+          <img  src="./imgs/icon/x.png" alt="">
+        </div>
+
+        <div class="items-model">
+
+          <div class="model-img">
+            <img id="mdd-img2" class="model-img-real" src="./imgs/product/1.png" alt="">
+          </div>
+
+          <div class="text-model">
+            <p id="mdd-name2" class="mmd-name">iPhone 15 Pro Max 1 TB</p>
+            <p id="mdd-price2" class="mmd-price-3">5000 ฿</p>
+          </div>
+
+          <div class="btn-contact">
+            <div class="btn-c">
+              <a href="https://web.facebook.com/profile.php?id=100063533562680">
+              <p>ติดต่อเจ้าหน้าที่</p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div id="menu-mb" class="menu-mb" >
+
+      <div class="area">
+
+        <div class="menu-name">
+        <p>เมนู</p>
+        <div onclick="closemenumb()" class="img-menu">
+          <img src="./imgs/icon/x.png" alt="">
+
+        </div>
+
+      </div>
+
+        <div class="icon-menu-mb">
+        
+        
+        
+        <div class="items-munu-mb">
+          <a href="./index.html">
+          <div class="items-area">
+            <div class="img-icon">
+            <img src="./imgs/icon/menu/menu-home.png" alt="">
+          </div>
+          <div class="name-menu-icon">
+            <p>หน้าแรก</p>
+          </div>
+          </div>
+          </a>
+
+        </div>
+        <div class="items-munu-mb">
+
+          <div class="items-area">
+            <div class="img-icon">
+            <img src="./imgs/icon/menu/menu-tablet.svg" alt="">
+          </div>
+          <div class="name-menu-icon">
+            <p>แท็บเล็ต</p>
+          </div>
+          </div>
+          
+        </div>
+        <div class="items-munu-mb">
+
+          <div class="items-area">
+            <div class="img-icon">
+            <img src="./imgs/icon/menu/menu-powerbank.svg" alt="">
+          </div>
+          <div class="name-menu-icon">
+            <p>แบตสำรอง</p>
+          </div>
+          </div>
+          
+        </div>
+        <div class="items-munu-mb">
+
+          <div class="items-area">
+            <div class="img-icon">
+            <img src="./imgs/icon/menu/menu-case.svg" alt="">
+          </div>
+          <div class="name-menu-icon">
+            <p>เคส</p>
+          </div>
+          </div>
+          
+        </div>
+
+      </div>
+
+      </div>
+      
+
+    </div>
+
+    <div class="top-to-top">
+        <div class="to-top-icon">
+            <a href="#top">
+                <img src="./imgs/icon/top.png" alt="">
+            </a>
+        </div>
+        
+
+    </div>
+
+    
+
+    
+
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+</html>
